@@ -13,7 +13,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-color: var(--color-grey-dark-2);
+  border-bottom: 1px solid var(--color-grey-light-2);
 
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@
 .hotel-view {
 
   // testing
-  background-color: pink;
+
   height: 80rem;
 
   flex: 1;
