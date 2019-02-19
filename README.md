@@ -1,4 +1,4 @@
-# Greentours
+# Reservo
 
 ## A project used to show some advanced flexbox techniques
 
