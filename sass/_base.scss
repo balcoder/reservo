@@ -1,22 +1,6 @@
 /*
 COLORS
-
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
 */
-
-
 :root {
   // set up css custom properties (variables)
   --color-primary: #eb2f64;
@@ -38,10 +22,15 @@ Grey dark 3: #999
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.1);
 }
 
+$breakpoint-largest: 75em; //1200/16px = 75em
+$breakpoint-large: 68.75em; //1100/16px = 68.75em
+$breakpoint-tab: 56.25em;  //900/16px = 56.25em
+$breakpoint-phone: 37.5em; //600/16px = 37.5em
+$breakpoint-phone-small: 31.25em; //500/16px = 31.25em
+
 * {
   margin: 0;
   padding: 0;
-
 }
 
 *,
@@ -53,6 +42,11 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%;  //1rem = 10px, 10px/16px = 62.5%
+
+  // change global font-size smaller at 1100px and hence the dependent rem size
+  @media only screen and (max-width: $breakpoint-large) {
+    font-size: 50%;
+  }
 }
 
 
